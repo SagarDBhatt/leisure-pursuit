@@ -11,6 +11,10 @@ public class AssignOne {
 
     }//end of main()
 
+    /**
+     * This method is used to present a table by providing the number as a param.
+     * @param n
+     */
     public void table(int n){
 
         for(int i = 1; i <= 10; i++){
