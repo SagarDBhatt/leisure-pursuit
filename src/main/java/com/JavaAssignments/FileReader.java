@@ -1,23 +1,21 @@
 package com.JavaAssignments;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
+import java.io.*;
 
 class FileRead {
-    public static void main(String[] args) {
-
-
-
+    public static void main(String[] args) throws IOException {
+        FileRead obj = new FileRead();
+        obj.read();
     }
 
-    public void read() throws FileNotFoundException {
-
+    public void read() throws IOException {
+        String str = null;
         File file = new File("C:/Personal Projects/leisure Pursuit/leisure-pursuit/src/main/java/ReaderFile");
         FileReader fr = new FileReader(file);
         BufferedReader br = new BufferedReader(fr);
 
-        
+       while((str = br.readLine()) != null){
+            System.out.println(str);
+        }
     }
 }
